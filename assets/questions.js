@@ -20,4 +20,26 @@ var myQuestions = [
         },
         correctAnswer: 'a'
     },
+
+    {
+        question: "What's a global variable?",
+        answers: {
+            a: 'Variables used in international',
+            b: 'Variables that are easy to translate',
+            c: 'Variables used throughout your JS code',
+            d: 'Variables that all files of your webpage uses'
+        },
+        correctAnswer: 'c'
+    },
+
+    {
+        question: "If I wanted the browser to ask a question for the user to answer, what would I use?",
+        answers: {
+            a: 'Alert',
+            b: 'Prompt',
+            c: 'Question',
+            d: 'Confirm'
+        },
+        correctAnswer: 'b'
+    },
 ]
