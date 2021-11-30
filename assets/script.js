@@ -86,7 +86,7 @@ var nerdQuestions = [
 var gameQuestions = [
     {
         question: "Now one of the big three gaming companies, they would not exist if weren't for the Meji Restoration.",
-        coorectAnswer: "What is Nintendo?"
+        correctAnswer: "What is Nintendo?"
     },
 
     {
@@ -105,6 +105,7 @@ var gameQuestions = [
     },
 
     {
-        question: ""
-    }
+        question: "This Japanese RPG will hit you with it's Last Surprise.",
+        correctAnswer: "What is Persona 5?"
+    },
 ]
