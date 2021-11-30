@@ -42,4 +42,19 @@ var myQuestions = [
         },
         correctAnswer: 'b'
     },
+
+    {
+        question: "What are the two methods to bring up devtools in Google Chrome?",
+        answers: {
+            a: 'Ctrl+Alt+Delete & F11',
+            b: 'Alt+F4 & F12',
+            c: 'Right click > View Page Source & F1',
+            d: 'Right click > Inspect & F12'
+        },
+        correctAnswer: 'd'
+    },
+];
+
+var nerdQuestions = [
+    
 ]
