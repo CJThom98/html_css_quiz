@@ -62,7 +62,44 @@ var nerdQuestions = [
     },
 
     {
+        question: "If you worked on this spaceship, the color of your shirt could determine whether you live or die.",
+        correctAnswer: "What is the Enterprise?"
+    },
+
+    {
         question: "It must flow and whoever controls it, controls the universe.",
-        correctAnswer: "What is spice?",
+        correctAnswer: "What is spice?"
+    },
+
+    {
+        question: "This firey teenager was once confused for having his scar on the wrong side.",
+        correctAnswer: "Who is Zuko?"
+    },
+
+    {
+        question: "Love is sometimes difficult, but love is hard for these kind of people.",
+        correctAnswer: "What are Otaku?"
+    },
+
+];
+
+var gameQuestions = [
+    {
+        question: "Now one of the big three gaming companies, they would not exist if weren't for the Meji Restoration.",
+        coorectAnswer: "What is Nintendo?"
+    },
+
+    {
+        question: "This enemy from a real global conflict has been used in many games from Call of Duty to Wolfenstein.",
+        correctAnswer: "What are Nazis?"
+    },
+
+    {
+        question: "This infamous scandal prompted many questions about the treatment of women in gaming culture and in the industry.",
+        correctAnswer: "What is GamerGate?"
+    },
+
+    {
+        
     }
 ]
