@@ -131,5 +131,35 @@ body {
 }
 
 .card-modal form button[type="submit"] {
-    
+    padding-left: 2em;
+    padding-right: 2em;
+    cursor: pointer;
+    font-family: inherit;
+    background: #ffe817;
+    border: 0;
+    font-size: inherit;
+    border-top-right-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+}
+
+.card-modal-inner {
+    width: 60%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.answer_success, .answer_fail {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.answer_success {
+    color: #90ff7e;
+}
+
+.answer_fail {
+    color: #8b0808;
+}
+
+.answer_correct-answer-text {
+    fon
 }
