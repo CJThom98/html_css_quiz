@@ -1,59 +1,56 @@
-var myQuestions = [
+var jsQuestions = [
     {
-        question: "This ",
-        answers: {
-            a: 'Number, String, Object',
-            b: 'Number, String, Boolean, Object, Undefined',
-            c: 'Number, Boolean, Object, Undefined',
-            d: 'Boolean, String, Object, Undefined'
-        },
-        correctAnswer: 'b'
+        question: "Number, String, Object, Boolean, and Undefined are these in Javascript",
+        correctAnswer: 'What are data types?'
     },
 
     {
-        question: "What are undeclared variables?",
-        answers: {
-            a: 'Variables that do not exist in the program and have not been declared.',
-            b: 'Variables that do no exist in the program.',
-            c: 'Variables that have not been declared.',
-            d: 'Variables that are not working.'
-        },
-        correctAnswer: 'a'
+        question: "These variables do not exist in the program and have not been declared.",
+        correctAnswer: 'What are undeclared variables?'
     },
 
     {
-        question: "What's a global variable?",
-        answers: {
-            a: 'Variables used in international',
-            b: 'Variables that are easy to translate',
-            c: 'Variables used throughout your JS code',
-            d: 'Variables that all files of your webpage uses'
-        },
-        correctAnswer: 'c'
+        question: "This variable is declared at the beginning and used through the entire script.",
+        correctAnswer: "What is a global variable?"
     },
 
     {
-        question: "If I wanted the browser to ask a question for the user to answer, what would I use?",
-        answers: {
-            a: 'Alert',
-            b: 'Prompt',
-            c: 'Question',
-            d: 'Confirm'
-        },
-        correctAnswer: 'b'
+        question: "I would use this if I want the browser to ask the user a question.",
+        correctAnswer: "What is prompt?"
     },
 
     {
-        question: "What are the two methods to bring up devtools in Google Chrome?",
-        answers: {
-            a: 'Ctrl+Alt+Delete & F11',
-            b: 'Alt+F4 & F12',
-            c: 'Right click > View Page Source & F1',
-            d: 'Right click > Inspect & F12'
-        },
-        correctAnswer: 'd'
+        question: "The two methods of bringing up dev tools in Google Chrome are right click > Inspect and this key.",
+        correctAnswer: "What is F12?"
     },
 ];
+
+var cssQustions = [ 
+    {
+        question: "This CSS property allows the developer to place text around an image.",
+        correctAnswer: "What is float?"
+    },
+
+    {
+        question: "If I want to dotted border around my text, I use this property.",
+        correctAnswer: "What is border-style?"
+    },
+
+    {
+        question: "You align elements by setting these.",
+        correctAnswer: "What are margins?"
+    },
+
+    {
+        question: "The stack order of divs is determined by using this type of index.",
+        correctAnswer: "What is z-index?"
+    },
+
+    {
+        question: "An element's content flow is defined by using this property.",
+        correctAnswer: "What is direction?"
+    }
+]
 
 var nerdQuestions = [
     {
