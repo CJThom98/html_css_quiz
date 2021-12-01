@@ -53,4 +53,18 @@ body {
 
 .board .column header {
     text-transform: capitalize;
+    background: linear-gradient(180deg, #8b0808 75%, #c3c3c9 110%);
+    text-align: center;
+    margin-bottom: 1em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board .column li {
+    background: linear-gradient(180deg, #8b0808 75%, #c3c3c9 110%);
+    color: #ffe817;
+    height: 3em;
+    margin-bottom: 0.25em;
 }
