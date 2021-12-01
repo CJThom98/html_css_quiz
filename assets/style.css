@@ -88,6 +88,9 @@ body {
 }
 
 .card-modal {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
     left: 0;
     right: 0;
     top: 0;
@@ -161,5 +164,8 @@ body {
 }
 
 .answer_correct-answer-text {
-    fon
+    font-weight: bold;
+    font-size: 2em;
+    display: block;
+    margin-left: 0.1em;
 }
