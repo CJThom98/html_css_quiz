@@ -26,3 +26,31 @@ body {
     display: flex;
     align-items: center;
 }
+
+.score-count {
+    color: #ffe817;
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 0.2em;
+}
+
+.column ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    display: flex;
+    justify-content: space-around;
+}
+
+.board .column {
+    flex: 1;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+}
+
+.board .column header {
+    text-transform: capitalize;
+}
