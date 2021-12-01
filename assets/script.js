@@ -1,0 +1,3 @@
+class TriviaGameShow {
+    constructor
+}
