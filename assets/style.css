@@ -113,3 +113,23 @@ body {
 .card-modal .clue-text {
     margin-bottom: 2em;
 }
+
+.answer,
+.card-modal.card-modal.showing-answer form {
+    display: none;
+}
+
+.card-modal form input[type="text"] {
+    display: block;
+    flex-grow: 1;
+    height: 3em;
+    line-height: 3em;
+    border: 0;
+    text-align: center;
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+}
+
+.card-modal form button[type="submit"] {
+    
+}
