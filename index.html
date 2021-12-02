@@ -19,13 +19,17 @@
                 <h2>HTML</h2>
                 <ul id="list-html" class="list-group">
                     <li class="list-group-item">
-                        <a class="trigger_popup_fricc">100</a>
+                        <a id="myBtn" class="trigger_popup_fricc">100</a>
 
-                        <div class="hover_bkgr_fricc">
-                            <span class="helper"></span>
-                            <div>
-                                <p>This enemy from a real global conflict has been<br />
-                                used in many games from Call of Duty to Wolfenstein.</p>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>
+                                    This enemy from a global conflict has been used in many games <br />
+                                    from Call of Duty to Wolfenstein.
+                                </p>
+                                <input name="user-answer" type="text" />
+                                <button type="submit">Answer</button>
                             </div>
                         </div>
                     </li>
