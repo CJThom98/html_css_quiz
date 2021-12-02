@@ -23,3 +23,11 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// If user answers correctly, award points based on category
+
+// If user answers incorrectly, show correct answer, don't award points
+
+// Ten second timer for each question
+
+// When user clicks on score, should be able to see theirs and others scores
