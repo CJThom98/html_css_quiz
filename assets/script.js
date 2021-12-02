@@ -1,11 +1,15 @@
-$(window).load(function () {
-    $(".trigger_popup_fricc").click(function(){
-       $('.hover_bkgr_fricc').show();
+var load = function() {
+
+    $(window).load(function () {
+        $(".trigger_popup_fricc").click(function(){
+            $('.hover_bkgr_fricc').show();
+        });
+        $('.hover_bkgr_fricc').click(function(){
+            $('.hover_bkgr_fricc').hide();
+        });
+        $('.popupCloseButton').click(function(){
+            $('.hover_bkgr_fricc').hide();
+        });
     });
-    $('.hover_bkgr_fricc').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-    $('.popupCloseButton').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-});
+};
+
