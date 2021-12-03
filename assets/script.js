@@ -1,7 +1,7 @@
-// Get the modal
+// Get the button that opens the modal
 var btn = document.querySelectorAll("button.modal-button");
 
-// Get the button that opens the modal
+// Get the modal
 var modals = document.querySelectorAll('.modal');
 
 // Get the <span> element that closes the modal
@@ -9,9 +9,9 @@ var spans = document.getElementsByClassName("close");
 
 // When the user clicks on the button, open the modal
 for (var i = 0; i < btn.length; i++) {
-  btn[i].oneclick = function(e) {
+  btn[i].onclick = function(e) {
     e.preventDefault();
-    modal = document.querySelector(e.target.getAttribute("section"));
+    modal = document.querySelector(e.target.getAttribute("href"));
     modal.style.display = "block";
   }
 }
