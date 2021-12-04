@@ -1,11 +1,13 @@
 // Get the button that opens the modal
-var btn = document.querySelectorAll("button.modal-button");
+var btn = document.querySelectorAll("h3.modal-button");
 // Get the modal
 var modals = document.querySelectorAll('.modal');
 // Get the <span> element that closes the modal
 var spans = document.getElementsByClassName("close");
-var correctAnswer = document.getElementById("#correct");
-var incorrectAnswer = document.getElementById("#incorrect");
+var correctBtn = document.querySelectorAll("button.correct-btn");
+var incorrectBtn = document.querySelectorAll("button.incorrect-btn");
+var correctAnswer = document.querySelectorAll(".correct");
+var incorrectAnswer = document.querySelectorAll(".incorrect");
 
 // When the user clicks on the button, open the modal
 for (var i = 0; i < btn.length; i++) {
@@ -34,8 +36,18 @@ window.onclick = function(event) {
   }  
 }
 
-for (var i = 0; i < correctAnswer.length; i++) {
-  correctAnswer[i].onclick = function() {
-    modal-footer.style.display = "block";
+for (var i = 0; i < correctBtn.length; i++) {
+  correctBtn[i].onclick = function(e) {
+    e.preventDefault();
+    correct = document.querySelector(e.target.getAttribute("href"));
+    correct.style.display = "block";
+  }
+}
+
+for (var i = 0; i < incorrectBtn.length; i++) {
+  incorrectBtn[i].onclick = function(e) {
+    e.preventDefault();
+    incorrect = document.querySelector(e.target.getAttribute("href"));
+    incorrect.style.display = "block"; 
   }
 }
