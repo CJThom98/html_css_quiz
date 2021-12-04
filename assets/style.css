@@ -52,9 +52,16 @@ h3 {
 
 .modal-body {padding: 2px 16px;}
 
-.modal-footer {
+.correct {
   display: none;
   padding: 2px 16px;
   background-color: #5cb85c;
-  color: white;
+  color: black;
+}
+
+.incorrect {
+  display: none;
+  padding: 2px 16px;
+  background-color: #f51e1e;
+  color: black;
 }
