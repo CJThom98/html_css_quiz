@@ -2,8 +2,9 @@ h3 {
   font-size: 22px;
 }
 
-.col-3 {
-  justify-content: center;
+.col-centered {
+  float: none;
+  margin: 0 auto;
 }
 
 /* The Modal (background) */
