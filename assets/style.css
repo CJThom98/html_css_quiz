@@ -30,10 +30,11 @@ h3 {
 
 /* The Close Button */
 .close {
-  color: white;
+  color: black;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  align-items: flex-end;
 }
 
 .close:hover,
@@ -52,6 +53,7 @@ h3 {
 .modal-body {padding: 2px 16px;}
 
 .modal-footer {
+  display: none;
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;
