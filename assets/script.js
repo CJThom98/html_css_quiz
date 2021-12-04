@@ -37,6 +37,7 @@ window.onclick = function(event) {
 
 // If user answers correctly, award points based on category
 
+
 // If user answers incorrectly, show correct answer, don't award points
 
 // Ten second timer for each question
