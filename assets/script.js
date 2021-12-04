@@ -116,13 +116,5 @@ const questions = [
     question: "Paint cans, stairs covered in tar, and a scorching hot door knob.",
     answer: "What is Home Alone?"
   },
-]
+];
 
-// If user answers correctly, award points based on category
-
-
-// If user answers incorrectly, show correct answer, don't award points
-
-// Ten second timer for each question
-
-// When user clicks on score, should be able to see theirs and others scores
