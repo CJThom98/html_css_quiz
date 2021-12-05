@@ -63,18 +63,3 @@ function timer() {
     }
   }, 1000);
 }
-
-var playerInfo = {
-  score: 0,
-  reset: function() {
-    this.score = 0;
-  },
-  updateScore: function() {
-    if (correctBtn) {
-      this.score += 10;
-    }
-    else {
-      this.score -= 10;
-    }
-  },
-};
