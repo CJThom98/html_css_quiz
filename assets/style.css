@@ -28,14 +28,21 @@ body {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #ff4545;
   margin: auto;
-  padding: 0;
   border: 1px solid #888;
   width: 80%;
-  height: 50%;
+  height: 60%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  align-items: center;
+  background: linear-gradient(137deg, #fbfbfb, #a10707 100%);
+}
+
+.modal-content p {
+  padding: 20px;
+}
+
+.modal-content button {
+  display: grid;
 }
 
 /* The Close Button */
@@ -67,6 +74,7 @@ body {
   padding: 2px 16px;
   background-color: #5cb85c;
   color: black;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .incorrect {
@@ -74,4 +82,5 @@ body {
   padding: 2px 16px;
   background-color: #f51e1e;
   color: black;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
