@@ -8,8 +8,9 @@ header {
   padding-top: 20px;
 }
 
-body {
+html body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(137deg, #fbfbfb, #a10707 100%);
 }
 
 /* The Modal (background) */
