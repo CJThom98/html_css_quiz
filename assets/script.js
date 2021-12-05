@@ -9,6 +9,7 @@ var incorrectBtn = document.querySelectorAll("button.incorrect-btn");
 var correctAnswer = document.querySelectorAll(".correct");
 var incorrectAnswer = document.querySelectorAll(".incorrect");
 
+
 // When the user clicks on the button, open the modal
 for (var i = 0; i < btn.length; i++) {
   btn[i].onclick = function(e) {
@@ -62,3 +63,18 @@ function timer() {
     }
   }, 1000);
 }
+
+var playerInfo = {
+  score: 0,
+  reset: function() {
+    this.score = 0;
+  },
+  updateScore: function() {
+    if (correctBtn) {
+      this.score += 10;
+    }
+    else {
+      this.score -= 10;
+    }
+  },
+};
