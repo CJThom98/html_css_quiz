@@ -1,11 +1,15 @@
 h3 {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 header {
   text-align: center;
   padding-bottom: 50px;
   padding-top: 20px;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* The Modal (background) */
