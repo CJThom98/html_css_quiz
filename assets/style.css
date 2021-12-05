@@ -1,25 +1,10 @@
-* {
-  box-sizing: border-box;
+h3 {
+  font-size: 25px;
 }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  font-family: sans-serif;
-  color: white;
-  font-size: 2vw;
+header {
   text-align: center;
-  padding: 1em;
-  background: linear-gradient(180deg, #2E2E3A 0%, #0C0C2C 100%);
-}
-
-.top-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-shadow: var(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding-bottom: 60px;
 }
 
 /* The Modal (background) */
