@@ -44,37 +44,3 @@ for (var i = 0; i < correctBtn.length; i++) {
     correct.style.display = "block";
   }
 }
-
-for (var i = 0; i < incorrectBtn.length; i++) {
-  incorrectBtn[i].onclick = function(e) {
-    e.preventDefault();
-    incorrect = document.querySelector(e.target.getAttribute("href"));
-    incorrect.style.display = "block"; 
-  }
-}
-
-function timer() {
-  var sec = 15;
-  var timer = setInterval(function() {
-    document.getElementById("timerDisplay").innerHTML='00:'+sec;
-    sec--;
-    if (sec < 0) {
-      clearInterval(timer);
-    }
-  }, 1000);
-}
-
-var playerInfo = {
-  score: 0,
-  reset: function() {
-    this.score = 0;
-  },
-  updateScore: function() {
-    if (correctBtn) {
-      this.score += 10;
-    }
-    else {
-      this.score -= 10;
-    }
-  },
-};
