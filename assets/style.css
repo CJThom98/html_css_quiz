@@ -15,24 +15,11 @@ h3 {
 }
 
 .top-header {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 50px;
   padding-top: 20px;
   font-style: italic;
-}
-
-.score {
-  display: flex;
-  align-items: center;
-}
-
-.score-count {
-  color: green;
-  font-size: 2em;
-  font-weight: bold;
-  margin-left: 0.2em;
 }
 
 /* The Modal (background) */
@@ -41,10 +28,7 @@ h3 {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
-  left: 345px;
-  top: 50px;
-  width: 55%; /* Full width */
-  height: 100%; /* Full height */
+  height: 120%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
 }
 
