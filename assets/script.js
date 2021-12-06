@@ -4,10 +4,8 @@ var btn = document.querySelectorAll("h3.modal-button");
 var modals = document.querySelectorAll('.modal');
 // Get the <span> element that closes the modal
 var spans = document.getElementsByClassName("close");
-var correctBtn = document.querySelectorAll("button.correct-btn");
-var incorrectBtn = document.querySelectorAll("button.incorrect-btn");
+var correctBtn = document.querySelectorAll("p.display-answer");
 var correctAnswer = document.querySelectorAll(".correct");
-var incorrectAnswer = document.querySelectorAll(".incorrect");
 
 
 // When the user clicks on the button, open the modal
