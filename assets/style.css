@@ -99,11 +99,3 @@ h3 {
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
-
-.incorrect {
-  display: none;
-  padding: 2px 16px;
-  background-color: #f51e1e;
-  color: black;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-}
