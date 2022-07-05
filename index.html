@@ -2,11 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>History Influence Quiz</title>
 </head>
 <body>
-    
+    <header>
+        <div>
+            <button class="btnHeader" id="view-high-scores">View High Score</button>
+        </div>
+        <div>
+            <p>Time: <span id="timeLeft">xxxx</span></p>
+        </div>
+    </header>
+
+    <div id="mainDiv">
+        <div id="gridContainer">
+            <p id="questionDisplay"></p>
+            <p class="explanation" id="questionDisplay"></p>
+            <p id="finalScoreDisplay"></p>
+            <p id="enterName"></p>
+            <textarea id="enterNameTextArea"></textarea>
+            <button class="btn" id="start-quiz">Begin</button>
+            <button class="btn" id="answer1"></button>
+            <button class="btn" id="answer2"></button>
+            <button class="btn" id="answer3"></button>
+            <button class="btn" id="answer4"></button>
+            <button class="btn" id="submitScore"></button>
+
+        </div>
+        <div id="answerCorrectWrongGrid"></div>
+        <p id="answerCorrectWrong"></p>
+    </div>
+
+    <script src="./assets/script.js"></script>
 </body>
 </html>
