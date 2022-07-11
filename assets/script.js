@@ -97,6 +97,58 @@ viewHighScoresBtnEl.addEventListener("click", function() { // view high scores
     window.alert(highScores);
 });
 
+submitScoreEl.addEventListener("click", function() {
+    var quizLocalStorage = "quiz";
+    var quizUserDetails = "";
+    var value = [];
+
+    quizUserDetails = quizLocalStorage + enterNameTextAreaEl.value
+    value = [quizUserDetails,highscore]
+
+    if (!localStorage.length) {
+        localStorage.setItem("test", "test");
+    }
+
+    for (var i = 0; i < localStorage.length; i++) {
+        var checkUser = "";
+        var checkUserValue = [];
+
+        quizUserDetails = quizLocalStorage + enterNameTextAreaEl.value;
+
+        checkUser = localStorage.getItem(quizUserDetails);
+
+        if (checkUser == null) {
+            localStorage.setItem(quizUserDetails, value);
+            window.alert("Your score of " + highscore + " has been submitted!")
+            break;
+        } else if (checkUser != null) {
+            checkUserValue = checkUser.split(",");
+        }
+
+        if (quizUserDetails == checkUserValue[0] && highscore == checkUserValue[1]) {
+
+            localStorage.setItem(quizUserDetails, value);
+            window.alert(highscore + " " + "is the latest entry user name " + enterNameTextAreaEl.value + ". Entry will not be added.")
+            break;
+        } else if (enterNameTextAreaEl.value == "") {
+            window.alert("Please enter a name.");
+            break;
+        } else if ( quizUserDetails == checkUserValue[0] && highscore > checkUserValue[1] ) {
+            localStorage.setIteam(quizUserDetails, value);
+            window.alert("New high score of " + highscore + " has been submitted!.\nYour previous score was " + checkUserValue[1])
+            break;
+        } else if ( quizUserDetails == checkUserValue[0] && highscore < checkUserValue[1] ) {
+            localStorage.setItem(quizUserDetails, value);
+            window.alert("Your previous score of " + checkUserValue[1] + " was higher. Entry will not be added.");
+            break;
+        } else {
+            localStorage.setItem(quizUserDetails, value);
+            window.alert("Your score of " + highscore + " has been submitted!")
+            break;
+        }
+    }
+});
+
 answer1BtnEl.addEventListener("mouseover", function() {
     answerCorrectWrong.style.display = 'none';
 });
