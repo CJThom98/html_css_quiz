@@ -177,5 +177,40 @@ startQuizBtnEl.addEventListener("click", function() {
     finalAnswerCheck = 0;
     checkTimes = 1;
 
-    
+    var timeInterval = setInterval(function() {
+        if (score === 1) {
+            highscore -= 10;
+        }
+
+        score = 0;
+
+        if (timeLeft >= 1 && finalAnswerCheck !== 1) {
+            questionDisplayEl.textContent = questionsObject.correct[questionNumber];
+
+            questionDisplayEl.style.display = "";
+            answer1BtnEl.style.display = "";
+            answer2BtnEl.style.display = "";
+            answer3BtnEl.style.display = "";
+            answer4BtnEl.style.display = "";
+
+            answer1BtnEl.textContent = answersObject.answers[answerNumber][0];
+            answer2BtnEl.textContent = answersObject.answers[answerNumber][1];
+            answer3BtnEl.textContent = answersObject.answers[answerNumber][2];
+            answer4BtnEl.textContent = answersObject.answers[answerNumber][3];
+
+            gridContainer.appendChild(questionDisplayEl);
+            gridContainer.appendChild(answer1BtnEl);
+            gridContainer.appendChild(finalScoreDisplayEl);
+            timeLeft -= 1;
+            htmlTimeLeft.textContent = timeLeft;
+            console.log("time left:" + timeLeft)
+
+            answer1BtnEl.addEventListener("click", function() {
+                if (questionDisplayEl.textContent === "Requiem of the Rose King follows Prince Richard during which tumultuous period of English history?" && answer1BtnEl.textContent === "The Wars of the Roses") {
+                    console.log("Correct");
+                    questionNumber = 1;
+                }
+            })
+        }
+    })
 });
