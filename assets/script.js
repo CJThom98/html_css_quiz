@@ -34,7 +34,7 @@ enterNameTextAreaEl.style.display = 'none';
 var questionsObject = {
     correct: {
         0: "Requiem of the Rose King follows Prince Richard during which tumultuous period of English history?",
-        1: "The Dragon Ball franchise is one anime's oldest and longest running franchises, but it gets inspiration from which ancient Chinese tale? ",
+        1: "The Dragon Ball franchise is one anime's oldest and longest running franchises, but it gets inspiration from which ancient Chinese tale?",
         2: "Spy X Family is set in the backdrop of rising tensions between the two fictional countries Westalias and Ostania, which both take inspiration from which two countries during the Cold War?",
         3: "In Attack on Titan, one of the characters is based on General Akiyama Yoshifuru, a controversial figure because of his actions from which conflict?",
         4: "The Wind Rises follows the life of which airplane designer, best known for his designs of the A6M 'Zero' carrier-fighter?"
@@ -67,7 +67,7 @@ var answersObject = {
             2: "The Boshin War",
             3: "The First Sino-Japanese War"
         },
-        4: { // Correct answer: 1
+        4: { // Correct answer: 0
             0: "Takeo Doi",
             1: "Jiro Horikoshi",
             2: "Yuji Akasaka",
@@ -206,9 +206,36 @@ startQuizBtnEl.addEventListener("click", function() {
             console.log("time left:" + timeLeft)
 
             answer1BtnEl.addEventListener("click", function() {
-                if (questionDisplayEl.textContent === "Requiem of the Rose King follows Prince Richard during which tumultuous period of English history?" && answer1BtnEl.textContent === "The Wars of the Roses") {
+                if (questionDisplayEl.textContent === "The Dragon Ball franchise is one anime's oldest and longest running franchises, but it gets inspiration from which ancient Chinese tale?" && answer1BtnEl.textContent === "Journey to the West") {
                     console.log("Correct");
-                    questionNumber = 1;
+                    questionNumber = 2;
+                    answerNumber = 4;
+                    answerCorrectWrong.style.display = "";
+                    answerCorrectWrong.textContent = "Correct!";
+                    answerCorrectWrong.style.borderTop = "solid";
+                    answerCorrectWrongGrid.appendChild(answerCorrectWrong);
+                } else {
+                    switch(answer1BtnEl.textContent) {
+                        case "The English Civil War":
+                            console.log("Inside the case now");
+                            answerCorrectWrong.style.display = "";
+                            answerCorrectWrong.textContent = "Wrong!";
+                            answerCorrectWrong.style.borderTop = "solid";
+
+                            score = 1;
+                            questionNumber = 1;
+                            answerNumber = 1;
+                            break;
+                        case "North and South Korea":
+                            console.log("Inside the case now");
+                            answerCorrectWrong.style.display = "";
+                            answerCorrectWrong.textContent = "Wrong!";
+                            answerCorrectWrong.style.borderTop = "solid";
+
+                            score = 1;
+                            questionNumber = 3;
+                            
+                    }
                 }
             })
         }
